@@ -2,8 +2,6 @@ import sys
 from pathlib import Path
 
 import cv2
-from tkinter import messagebox
-from tkinter import filedialog as fd
 
 from faces_mask import FacesMask
 from dialog import error_msg
