@@ -6,7 +6,7 @@ from tkinter import ttk
 from tkinter import filedialog as fd
 from PIL import ImageTk, Image
 
-from dialog import error_msg
+from dialog import error_msg, ask_file
 from prompts.base import Prompt
 
 
@@ -32,7 +32,7 @@ class ImagePrompt(Prompt):
     
     
     def _ask_for_image(self) -> None:
-        image_file = fd.askopenfilename(title="choose image file")
+        image_file = ask_file("choose image file")
         if not image_file:
             error_msg("No image was chosen")
             return
