@@ -2,8 +2,6 @@ import sys
 from pathlib import Path
 
 import cv2
-from tkinter import messagebox
-from tkinter import filedialog as fd
 
 from faces_mask import FacesMask
 from dialog import error_msg
@@ -44,9 +42,8 @@ def main() -> None:
         dlib_handler = FacesMask(predictor)
         dlib_handler.set_mask(face_mask_file)
         
-        window_res = (640, 480)
         cv2.namedWindow("FaceMask", cv2.WINDOW_NORMAL)
-        cv2.resizeWindow("FaceMask", *window_res)
+        cv2.resizeWindow("FaceMask", 640, 480)
 
         while cv2.getWindowProperty("FaceMask", cv2.WND_PROP_VISIBLE) >= 1:
             ret, frame = cap.read()
@@ -59,8 +56,7 @@ def main() -> None:
                     frame = new_frame
 
                 cv2.imshow("FaceMask", frame)
-                if cv2.waitKey(1) & 0xFF == ord("q"):
-                    break
+                cv2.waitKey(1)
 
         cap.release()
         cv2.destroyAllWindows()
