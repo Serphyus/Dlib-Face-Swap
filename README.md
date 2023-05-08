@@ -1,4 +1,6 @@
-# Dlib-Face-Swap
+<h1 align="center">
+	Dlib-Face-Swap
+</h1>
 
 This project is an ai project that uses Dlib's face_detector and
 68 face landmark shape predictor model. The program uses the detector
