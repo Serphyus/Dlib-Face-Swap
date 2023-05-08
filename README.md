@@ -1,4 +1,6 @@
-# Dlib-Face-Swap
+<h1 align="center">
+	Dlib-Face-Swap
+</h1>
 
 This project is an ai project that uses Dlib's face_detector and
 68 face landmark shape predictor model. The program uses the detector
@@ -27,6 +29,7 @@ it applies the newly warped face mask on top.
 - windows-capture-device-list
 
 ## Setup
+clone the main repo and install requirements
 ```
 git clone https://github.com/Serphyus/Dlib-Face-Swap.git
 cd Dlib-Face-Swap
@@ -34,6 +37,7 @@ pip install requirements.txt
 ```
 
 ## Usage
+run the main python file
 ```
-python src/main
+python src/main.py
 ```
