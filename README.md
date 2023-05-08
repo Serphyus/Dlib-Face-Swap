@@ -29,6 +29,7 @@ it applies the newly warped face mask on top.
 - windows-capture-device-list
 
 ## Setup
+clone the main repo and install requirements
 ```
 git clone https://github.com/Serphyus/Dlib-Face-Swap.git
 cd Dlib-Face-Swap
@@ -36,6 +37,7 @@ pip install requirements.txt
 ```
 
 ## Usage
+run the main python file
 ```
-python src/main
+python src/main.py
 ```
