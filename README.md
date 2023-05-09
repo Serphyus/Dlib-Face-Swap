@@ -14,11 +14,9 @@ frame.
 
 ## FaceMask Demo
 <div align="center">
-    <img src="/media/tom_cruise.jpg" height="200">
-	<img width="50px">
-	<img src="/media/right-arrow.png" height="200">
-	<img width="50px">
-	<img src="/media/demo.gif" height="200">
+    <img src="./media/tom_cruise.jpg" height="200">
+	<img src="./media/right-arrow.png" height="200">
+	<img src="./media/demo.gif" height="200">
 </div>
 
 ## Pip Requirements
