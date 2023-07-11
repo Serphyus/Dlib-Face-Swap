@@ -2,15 +2,16 @@
 	Dlib-Face-Swap
 </h1>
 
-This project is an ai project that uses dlib's frontal_face_detector and
-a 68 face landmark shape predictor model. The detector discovers faces
-in a live feed provided from a chosen capture device. For each face
-discovered in the live feed the program uses the landmark predictor model
-to create a set of face landmark coordinates. These then get used to
-calculate a dealunay triangulation. The same process happens on the image
-given as the face mask and for each frame the triangulations of the face
-mask are warped to the shape of the face triangulations in the live feed
-using an affine transformation and then rendered on top of the frame.
+This project is an AI project that uses dlib for face detection and shape
+prediction and some geometric triangulation and transformation for warping
+a face mask on top of it. The detector discovers faces in a live feed
+provided from a chosen capture device. For each face discovered in the
+live feed the program uses the landmark predictor model to create a set
+of face landmark coordinates. These then get used to calculate a dealunay
+triangulation. The same process happens on the image given as the face
+mask and for each frame the triangulations of the face mask are warped to
+the shape of the face triangulations in the live feed using an affine
+transformation and then rendered on top of the frame.
 
 ## FaceMask Demo
 <div align="center">
