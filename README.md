@@ -11,7 +11,7 @@ of face landmark coordinates. These then get used to calculate a dealunay
 triangulation. The same process happens on the image given as the face
 mask and for each frame the triangulations of the face mask are warped to
 the shape of the face triangulations in the live feed using an affine
-transformation and then rendered on top of the frame.
+transformation and then rendered on top of them.
 
 ## FaceMask Demo
 <div align="center">
