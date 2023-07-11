@@ -4,13 +4,13 @@
 
 This project is an ai project that uses dlib's frontal_face_detector and
 a 68 face landmark shape predictor model. The detector discovers faces
-in a live feed provided from a chosen capture device. When discovering
-the faces the program uses the landmark predictor model to create a set
-of landmark coordinates. These then get used to create generate dealunay
-triangulations which are used to warp the triangulations created on the
-image given to use as the face mask using an affine transformation.
-Finally the triangles of the face mask is applied to the capture feed's
-frame.
+in a live feed provided from a chosen capture device. For each face
+discovered in the live feed the program uses the landmark predictor model
+to create a set of face landmark coordinates. These then get used to
+calculate a dealunay triangulation. The same process happens on the image
+given as the face mask and for each frame the triangulations of the face
+mask are warped to the shape of the face triangulations in the live feed
+using an affine transformation and then rendered on top of the frame.
 
 ## FaceMask Demo
 <div align="center">
